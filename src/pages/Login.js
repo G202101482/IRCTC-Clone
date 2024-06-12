@@ -36,8 +36,8 @@ function Login() {
       navigate('/profile',{state:{msg:"Logged Successfully",type:"success"}});
     } catch (error) {
       setData({ email: "", password: "" });
-      if (error.code === 'auth/invalid-credential') { showAlert('Invalid Credentials!',"danger"); }
-      else if (error.code === 'auth/invalid-email') { showAlert('Invalid Email!',"danger"); }
+      if (error.code === 'auth/invalid-email') { showAlert('Invalid Email!',"danger"); }
+      else if (error.code === 'auth/invalid-credential') { showAlert('Invalid Credentials!',"danger"); }
       else if (error.code === 'auth/network-request-failed') { showAlert('Network Request Failed!',"danger"); }
       console.log(error.message);
     }
