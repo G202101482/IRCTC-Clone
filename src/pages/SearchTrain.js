@@ -92,12 +92,14 @@ function SearchTrain() {
       const response = await fetch(url, options);
       const result = await response.json();
       console.log(result);
-      if (result.data.length==0) {
+      if (result.data.length===0) {
         setData({ from: "", to: "", date: "" });
         showAlert("Search Results Not Found", "danger");
       }
       setSearchResults(result.data);
     } catch (error) {
+      setData({ from: "", to: "", date: "" });
+      showAlert("Some Error occurred", "danger");
       console.error(error);
     }
     // console.log(data);
