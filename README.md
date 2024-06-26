@@ -25,11 +25,13 @@ Feature includes - User Registration and Authentication, Train Search and Bookin
 ## Getting Started 🔥
 
 1. **Clone the Repository**
+   
    ```bash
-   https://github.com/G202101482/IRCTC-Clone.git
+   git clone https://github.com/G202101482/IRCTC-Clone.git
    ```
 
 2. **Install Dependencies**
+   
    ```bash
    npm install
    ```
@@ -37,6 +39,7 @@ Feature includes - User Registration and Authentication, Train Search and Bookin
 ## Running the Application 🚀
 
 1. **Start the Development Server**
+   
    ```bash
    npm start
    ```
@@ -45,11 +48,13 @@ Feature includes - User Registration and Authentication, Train Search and Bookin
 ## Deploying Changes 🌐
 
 1. **Build the app for production**
+   
    ```bash
    npm run build
    ```
    
 2. **Deploy on Firebase**
+   
    ```bash
    firebase deploy
    ```
